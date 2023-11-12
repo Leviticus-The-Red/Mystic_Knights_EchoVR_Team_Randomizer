@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystic Knights Team Randomizer</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <section class="box-border">
+    <div class="box">
+        <div class="titles">
+          <h1 class="title"> Mystic Knights</h1>
+          <h3 class="sub-title"> Team Randomizer</h3>
+        </div>
+
+        <div class="btn-list">
+         <div class="btn-border">   
+          <button class="start">Start</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="modes-border hidden">
+      <div class="modes">
+        <h2 class="modal-title">Select Mode</h2>
+        <div class="btn-list">
+        <div class="btn-border"> 
+        <button class="btn-modal1-2v2">2 vs 2</button>
+      </div>
+        <div class="btn-border"> 
+        <button class="btn-modal2-3v3">3 vs 3</button>
+      </div>
+        <div class="btn-border"> 
+        <button class="btn-modal3-4v4">4 vs 4</button>
+      </div>
+        <div class="btn-border"> 
+        <button class="btn-modal4-custom">5 vs 5</button>
+      </div>
+      </div>
+      </div>
+    </section>
+    
+    <section class="modal-border hidden">
+       <div class="modal">
+
+        <h2 class="modal-title">Select Players</h2>
+
+        <button class="btn-clear clear1">clear</button>
+        
+        <button class="btn-back back1">back</button>
+        <div class="player-select">
+
+          <div class="player forjs" id="Leviticus_The_Red">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="leviticus_the_red">Leviticus_The_Red</label>
+          </div>
+
+          <div class="player forjs" id="Zeusandposeidon">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="zeusandposeidon">Zeusandposeidon</label>
+          </div>
+
+          <div class="player forjs" id="Mystical777">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="mystical777">Mystical777</label>
+          </div>
+
+          <div class="player forjs" id="Cashmanimal">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="cashmanimal">Cashmanimal</label>
+          </div>
+
+          <div class="player forjs" id="Lumpymuffins">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="lumpymuffins">Lumpymuffins</label>
+          </div>
+
+          <div class="player forjs" id="DaHammer">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="dahammer">DaHammer</label>
+          </div>
+
+          <div class="player forjs" id="Gooseskywalker">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="gooseskywalker">Gooseskywalker</label>
+          </div>
+
+          <div class="player forjs" id="Diamondpotato">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="diamondpotato">Diamondpotato</label>
+          </div>
+
+          <div class="player forjs" id="Pablo1">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="pablo1">Pablo1</label>
+          </div>
+
+          <div class="player forjs" id="SVCO">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+            <label for="svco">SVCO</label>
+          </div>
+
+          <div class="guestblock">
+            <div class="dummy-checkbox d1"></div>
+            <div class="forjs guest g1 hidden" id="">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+          </div>
+            <input class= "guest1text" type="text" placeholder="Guest"></input>
+          </div>
+
+          <div class="guestblock">
+            <div class="dummy-checkbox d2"></div>
+            <div class="forjs guest g2 hidden" id="">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+          </div>
+          <input class= "guest2text" type="text" placeholder="Guest"></input>
+          </div>
+
+         <div class="guestblock">
+          <div class="dummy-checkbox d3"></div>
+          <div class="forjs guest g3 hidden" id="">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+          </div>
+          <input class= "guest3text" type="text" placeholder="Guest"></input>
+        </div>
+
+        <div class="guestblock">
+          <div class="dummy-checkbox d4"></div>
+          <div class="forjs guest g4 hidden" id="">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+          </div>
+          <input class= "guest4text" type="text" placeholder="Guest"></input>
+        </div>
+
+        <div class="guestblock">
+          <div class="dummy-checkbox d5"></div>
+          <div class="forjs guest g5 hidden" id="">
+            <div class="checkbox-checked hidden"></div>
+            <div class="checkbox"></div>
+          </div>
+          <input class= "guest5text" type="text" placeholder="Guest"></input>
+        </div>
+
+        </div>
+        <div class="warning-border hidden">
+          <div class="warning1 hidden">
+            <p>Too many players are selected...</p>
+            <p>(click here)</p>
+          </div>
+         <div class="warning2 hidden">
+          <p>Not enough players are selected...</p>
+          <p>(click here)</p>
+      </div>
+    </div>
+
+        <div class="randomize-border">
+          <button class="randomize">RANDOMIZE!</button>
+        </div>
+
+      <div class="lineupContainer hidden">
+        <h1 class="blue-team">Blue Team</h1>
+        <h1 class="orange-team">Orange Team</h1>
+      <div class="position position-border pb1">
+        <div class="position spot1"></div>
+      </div>
+      <div class="position position-border pb2">
+        <div class="position spot2"></div>
+      </div>
+        <div class="position position-border pb3">
+        <div class="position spot3"></div>
+      </div>
+        <div class="position position-border pb4">
+        <div class="position spot4"></div>
+      </div>
+        <div class="position position-border pb5">
+        <div class="position spot5"></div>
+      </div>
+        <div class="position position-border pb6">
+        <div class="position spot6"></div>
+      </div>
+        <div class="position position-border pb7">
+        <div class="position spot7"></div>
+      </div>
+        <div class="position position-border pb8">
+        <div class="position spot8"></div>
+      </div>
+        <div class="position position-border pb9">
+        <div class="position spot9"></div>
+      </div>
+        <div class="position position-border pb10">
+        <div class="position spot10"></div>
+      </div>
+      </div>
+
+    </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">Leviticus_The_Red</footer>
+</html>
